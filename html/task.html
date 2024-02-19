@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            font-family: Arial;
+            padding: 10px;
+            background: gray;
+          }
+          p{
+            text-overflow: ellipsis;
+
+          }
+          
+          /* Header/Blog Title */
+         .leftcolumn.header {
+            padding: 30px;
+            text-align: left;
+            background: white;
+          }
+          
+          .header h1 {
+            font-size: 30px;
+          }
+          
+            
+    
+          .leftcolumn {   
+            display: flex;
+            
+            width: 80%;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            height: 50vh;
+          }
+          
+          /* Right column */
+          .rightcolumn {
+            float: left;
+            width: 20%;
+            height: 70vh;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+          }
+          .content {
+            text-align: left;
+            border: 0.5rem solid gray;
+            
+          }
+          .card {
+            background-color: wheat;
+            padding: 20px;
+            margin-top: 20px;
+            border: 0.5rem solid grey;
+            width: 20%;
+            margin: 1px;
+            border-radius: 5%;
+            height: 150px;
+            flex-basis: 22;
+          
+            
+
+            
+          }
+          .row{
+            display: flex;
+          }
+          /* Clear floats after the columns */
+          .row::after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          progress{
+            /*reset to default appearance*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+         
+            width: 200px;
+            height: 20px;
+            border-radius: 20px;
+            border: 1px solid #434343;
+        }
+         
+        /*style for background track*/
+        progress::-webkit-progress-bar {
+            background: rgb(163, 155, 155);
+            border-radius: 20px;
+        }
+        /*style for progress track*/
+        progress::-webkit-progress-value {
+            background-image: linear-gradient(120deg,#ffd173 0,#070807 55%);
+            border-radius: 20px;
+        }
+          /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width:852px) 
+  {
+    .card{
+        width: 40%;
+        justify-content: center;
+    }
+    
+  }
+ 
+@media screen and (max-width:300px) 
+{
+  .card{
+      width: 100%;
+      justify-content: center;
+  }
+}
+  @media screen and (max-width:300px) 
+{
+  .rightcolumn{
+      width: 100%;
+      display: block;
+  }
+}
+  @media screen and (max-width:300px) 
+{
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+          
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>HOMEPAGE DESIGN</h1>
+      </div>
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <SPAN class="content">UI DESIGN</SPAN>
+          <pre><p>Sunniam, quis nostrud 
+exercitation ullamco.</p></pre>
+          </div>
+              <div class="card">
+                <SPAN class="content"> copywritting</SPAN>
+              <p>Sunniam, quis nostrud </p>
+              </div>
+                  <div class="card">
+                    <SPAN class="content"> copywritting</SPAN>
+                <p>Sunniam, quis nostrud 
+exercitation ullamco.</p>
+                  </div>
+                      <div class="card">
+                        <SPAN class="content"> illustration</SPAN>
+                    <p>Sunniam, quis nostrud 
+exercitation ullamco.</p>
+                      </div>
+                          <div class="card">
+                            <SPAN class="content">UI DESIGN</SPAN>
+                          <p>Sunniam, quis nostrud 
+exercitation ullamco.</p>
+                          </div>
+                          <div class="card">
+                            <SPAN class="content">ILLUSTRATION </SPAN>
+                          <pre><p>Sunniam, quis nostrud 
+exercitation ullamco.</p></pre>
+                          </div>
+                          <div class="card">
+                            <SPAN class="content">UI DESIGN</SPAN>
+                          <p>Sunniam, quis nostrud 
+exercitation ullamco.</p>
+                          </div>
+                          <div class="card">
+                            <SPAN class="content">UI DESIGN</SPAN>
+                          <p>Sunniam, quis nostrud 
+exercitation ullamco.</p>
+                          </div>
+                        </div>
+                           <div class="rightcolumn">
+                            
+                              <h2>TASK PROGRESS</h2>
+                              <form>
+                                <H6>COPYWRITING</H6>
+                                <progress value="59" max="100"> </progress>
+                            </form>
+                            <form>
+                                <H6>COPYWRITING</H6>
+                                <progress value="59" max="100"> </progress>
+                            </form>
+                            <form>
+                                <H6>COPYWRITING</H6>
+                                <progress value="59" max="100"> </progress>
+                            </form>
+                            <H6>RECENT ACTIVITY</H6>
+                            <P>ANDREA UPLOAD 3 DOCUMENT</P>
+                              <P>karan left a comment</P>
+                              <p>karn upload document</p>
+
+                            
+                              
+      </div>
+</body>
+</html>

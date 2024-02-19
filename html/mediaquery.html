@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            margin: 0;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+          }
+          
+          .header {
+            text-align: center;
+            padding: 32px;
+          }
+          
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* Create four equal columns that sits next to each other */
+          .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+          }
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+          @media screen and (max-width: 800px) {
+            .column {
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column {
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+      </div>
+      
+      <!-- Photo Grid -->
+      <div class="row"> 
+        <div class="column">
+          <img src="../images/media query/image1.jpeg" style="width:100%">
+          <img src="../images/media query/image2.jpeg" style="width:100%">
+          <img src="../images/media query/image3.jpeg" style="width:100%">
+          <img src="../images/media query/image4.jpeg" style="width:100%">
+          </div>
+        
+        <div class="column">
+          <img src="../images/media query/image5.jpeg" style="width:100%">
+          <img src="../images/media query/image6.jpeg" style="width:100%">
+          <img src="../images/media query/images7.jpeg" style="width:100%">
+          <img src="../images/media query/image8.jpeg" style="width:100%">
+        </div> 
+         
+        <div class="column">
+          <img src="../images/media query/images9.jpeg" style="width:100%">
+          <img src="../images/media query/images10.jpeg" style="width:100%">
+          <img src="../images/media query/images11.jpeg" style="width:100%">
+        </div>
+        
+        <div class="column">
+          <img src="../images/media query/images12.jpeg" style="width:100%">
+          <img src="../images/media query/images13.jpeg" style="width:100%">
+          <img src="../images/media query/images14.jpeg" style="width:100%">
+          <img src="../images/media query/images15.jpeg" style="width:100%">
+          <img src="../images/media query/images16.jpeg" style="width:100%">
+
+
+        </div>
+      </div>
+      
+</body>
+</html>

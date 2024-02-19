@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style image</title>
+    <style>
+        .row{
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /*fade in text*/
+        .container {
+            position: relative;
+            width: 30%;
+          }
+          
+          .pic {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+          
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+          }
+          
+          .container:hover .overlay {
+            opacity: 1;
+          }
+          
+          .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+         /* fade in box*/
+         
+          
+          .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+          }
+          
+          .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+          }
+          
+          .container:hover .image {
+            opacity: 0.3;
+          }
+          
+          .container:hover .middle {
+            opacity: 1;
+          }
+          
+          .text1 {
+            background-color: #4CAF50;
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
+          }
+          /* slide in top*/
+            .pic3 {
+            display: block;
+            width: 100%;
+            height: auto;
+            }
+
+          .overlay2 {
+         position: absolute;
+         bottom: 100%;
+         left: 0;
+         right: 0;
+         background-color: #008CBA;
+         overflow: hidden;
+         width: 100%;
+         height: 0;
+         transition: .5s ease;
+         }
+
+         .container:hover .overlay2 {
+         bottom: 0;
+         height: 100%;
+        }
+
+          .text2 {
+         white-space: nowrap; 
+         color: white;
+         font-size: 20px;
+         position: absolute;
+         overflow: hidden;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         }
+            /* slide from bottam*/
+            .pic4 {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+              
+              .overlay3 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: gray;
+                overflow: hidden;
+                width: 100%;
+                height: 0;
+                transition: .5s ease;
+              }
+              
+              .container:hover .overlay3 {
+                height: 100%;
+              }
+              
+              .text3 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+              }
+              /* overlay from left*/
+              .pic5 {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+              
+              .overlay4 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #008CBA;
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: .5s ease;
+              }
+              
+              .container:hover .overlay4 {
+                width: 100%;
+              }
+              
+              .text4 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+              }
+              /*left overlay*/
+              .pic5 {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+              
+              .overlay4 {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #008CBA;
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: .5s ease;
+              }
+              
+              .container:hover .overlay4 {
+                width: 100%;
+                left: 0;
+              }
+              
+              .text4 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+              /*right overlay*/
+              .pic6 {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+              
+              .overlay5 {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                right: 0;
+                background-color: #008CBA;
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: .5s ease;
+              }
+              
+              .container:hover .overlay5 {
+                width: 100%;
+                left: 0;
+              }
+              
+              .text5 {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+    </style>
+</head>
+<body>
+    <div class="row">
+     <div class="container">
+        <img src="../images/jaipur.jpeg" alt="jaipur" class="pic">
+        <div class="overlay">
+          <div class="text">FADE IN OVERLAYS</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/hills.jpeg" alt="hills" class="image" style="width:100%">
+        <div class="middle">
+          <div class="text1">hills</div>
+        </div>
+      </div>
+      <div class="container">
+     <img src="../images/tajmahal.jpeg" alt="taj mahal" class="pic3">
+      <div class="overlay2">
+        <div class="text2">top overlay</div>
+      </div>
+     </div> 
+     <div class="container">
+        <img src="../images/RAM MANDIR.jpeg" alt=" ram mandir" class="pic4">
+        <div class="overlay3">
+          <div class="text3">bottam overlay</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/red ford.jpeg" alt="red ford" class="pic5">
+        <div class="overlay4">
+          <div class="text4">left overlay</div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="../images/MOUNTAIN.JPG" alt="mountain" class="pic6">
+        <div class="overlay5">
+          <div class="text5">right OVERLAYS</div>
+        </div>
+      </div>
+     </div>
+      
+</body>
+</html>
